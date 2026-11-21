@@ -1,0 +1,18 @@
+# PyTorch with CUDA: install the build matching your GPU/driver from https://pytorch.org
+# (Google Colab already has it).
+torch>=2.1
+numpy
+pillow
+tifffile
+scikit-image
+scipy
+tqdm
+packaging
+requests
+# StyleGAN2-ADA (NVIDIA code) extras
+click
+psutil
+ninja          # lets StyleGAN compile its fast CUDA kernels (falls back to slower PyTorch ops otherwise)
+imageio
+# Evaluation (FID / KID / precision-recall with the original Inception weights)
+torch-fidelity>=0.3
